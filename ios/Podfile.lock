@@ -217,6 +217,12 @@ PODS:
     - React-cxxreact (= 0.61.0)
     - React-jsi (= 0.61.0)
     - ReactCommon/jscallinvoker (= 0.61.0)
+  - RNSentry (1.4.2):
+    - React
+    - Sentry (~> 5.1.1)
+  - Sentry (5.1.8):
+    - Sentry/Core (= 5.1.8)
+  - Sentry/Core (5.1.8)
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -247,11 +253,13 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/jscallinvoker (from `../node_modules/react-native/ReactCommon`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - "RNSentry (from `../node_modules/@sentry/react-native`)"
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   trunk:
     - boost-for-react-native
+    - Sentry
 
 EXTERNAL SOURCES:
   DoubleConversion:
@@ -302,6 +310,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/Vibration"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNSentry:
+    :path: "../node_modules/@sentry/react-native"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -331,6 +341,8 @@ SPEC CHECKSUMS:
   React-RCTText: beb19a6c50072a1a2f617490ea967237c98d1dfc
   React-RCTVibration: c8e67f140a83a14a1ad9042950cca08ab29423fd
   ReactCommon: 584ef683c340894c1c82be43ce760390493ae8bf
+  RNSentry: c4bdecef182912b8d8bb5b626f45da314f047dbd
+  Sentry: 795e8ffe1c45d9d20b3aa398774d7ea6a443fb05
   Yoga: 3f70bbd9aa01e04eefec36e2a085b2fc0ff1dd98
 
 PODFILE CHECKSUM: 169f4098aacf4ea80280699504474563483f1c74
